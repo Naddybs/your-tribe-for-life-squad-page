@@ -1,15 +1,16 @@
 <script>
   export let name;
-  export let role;
-  export let imageUrl;
+  export let avatar;
+  export let prefix;
+  export let surname;
 </script>
 
 <div class="card">
   <div class="card-inner">
     <div class="card-front">
       <h2>{name}</h2>
-      <img src={imageUrl} alt="Profile picture of {name}" />
-      <p>{role}</p>
+      <img src={avatar} alt="Profile picture of {name}" />
+      <h3>{prefix}{surname}</h3>
     </div>
     <div class="card-back">
       <!-- Dit is de achtergrond van de kaart, bijvoorbeeld de Pokémon achterkant -->

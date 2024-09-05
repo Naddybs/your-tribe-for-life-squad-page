@@ -1,0 +1,9 @@
+:root{
+    --primary-color: #092441;
+    --secundary-color: rgb(255, 251, 0);
+    --accent-color: red;
+}
+
+body{
+    background-color: var(--secundary-color);
+}
