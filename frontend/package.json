@@ -20,6 +20,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@directus/sdk": "^17.0.0"
+		"@directus/sdk": "^17.0.0",
+		"@sveltejs/adapter-vercel": "^5.4.3"
 	}
 }

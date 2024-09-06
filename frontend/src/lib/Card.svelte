@@ -48,13 +48,21 @@
 
   .card:hover {
     transform: scale(1.2);
-    box-shadow: 0 8px 30px rgba(246, 255, 142, 1); 
+    box-shadow: 0 8px 30px rgba(246, 255, 142, 1);
     z-index: 2;
     margin: 2em;
   }
 
   .card:hover .card-inner {
     transform: rotateY(180deg);
+  }
+
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 0.5em;
   }
 
   .card-front {
@@ -88,14 +96,6 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-  }
-
-  .card-front, .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 0.5em;
   }
 
   /* Kleur hologram effect */
